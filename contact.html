@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEST GATE TECHNICAL SERVICES LLC</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="/our/Logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="/our/Logo.png" alt="Logo" class="logo-image">
+            <h1 class="logo-text">WEST GATE TECHNICAL SERVICES LLC</h1>
+        </div>
+        <ul class="nav-links">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Our Services</a></li>
+            <li class="cnt"><a href="contact.html">Contact</a></li>
+        </ul>
+        <img src="/our/men-btn.png" alt="Menu Button" class="menu-btn">
+    </nav>
+    <!-- Contact Section -->
+    <section class="contacts">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact information</h3>
+                    <p><i class="fas fa-phone"></i> 04 3237118</p>
+                    <p><i class="fas fa-envelope"></i> info@westgatedxb.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 13 Street 20A - Al Quoz Industrial Area 3, Dubai</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.669570671716!2d55.2243477693158!3d25.12960095064783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69ebe6c70f29%3A0x6b17c74a3f891db9!2sWest%20Gate%20Technical%20Services%20LLC!5e0!3m2!1sen!2sae!4v1622024246699!5m2!1sen!2sae" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <center>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2024 West Gate Technical Services LLC. All rights reserved.</p>
+        </center>
+    </footer>
+    
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,628 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body,html{
+    overflow-x: hidden;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    color: rgb(53, 3, 3);
+}
+.navbar h1{
+    animation: fadeInTop 2s ease;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 40px;
+    width: 40px;
+    margin-right: 9px;
+}
+.logo-text {
+    font-size: 25px;
+    margin: 0;
+}
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+.nav-links li {
+    margin: 0 10px;
+}
+ul{
+    list-style: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.nav-links a {
+    color: rgb(95, 95, 95);
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+.nav-links a:hover{
+    background-color: #dba9df;
+    border-radius: 5px;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background:url(/our/d6.jpg)no-repeat center center/cover;;
+    background-position:100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content{
+    margin-bottom: 12%;
+    color-scheme: rgb(161, 57, 57);
+    text-align: center;
+}
+.header-content h1{
+    font-size: 8vmin;
+    text-align: center;
+    color: rgb(3, 0, 0);
+    text-shadow: 2px 2px 5px rgb(223, 209, 209);
+    animation: fadeInUp 2s ease;
+}
+.line{
+    width: 250px;
+    height: 12px;
+    background: rgb(255, 102, 102);
+    margin: 25px auto; 
+    border-radius: 5px;
+}
+.header-content h2{
+    font-size: 4vmin;
+    color: rgb(0, 0, 0);
+    margin-top: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+    animation: fadeInRight 2s ease;
+}
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+/*New Abouts*/
+.hero{
+    background: #fff;
+    overflow: hidden;
+}
+.heros{
+    background-image: url(/our/d6.jpg);
+    background-position: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+.heading h1{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+    color: #4f7413;
+    text-shadow: 2px 2px 5px rgba(139, 128, 128, 0.527);
+    animation: fadeInRight 2s ease;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    align-items: center;
+    width: 100%;
+    margin: 65px auto;
+}
+.hero-content{
+    flex: 1;
+    width: 100px;
+    margin: 0px 25px;
+    animation: fadeInUp 2s ease;
+}
+.hero-content p{
+    font-size: 25px;
+    line-height:1.5 ;
+    margin-bottom:40px;
+    color:#666;
+}
+.hero-content button{
+    display: inline-block;
+    background-color: #51d855;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.hero-content button:hover{
+    background-color:#51d855;
+    transform: scale(1.1);
+}
+.hero-image{
+    flex: 1;
+    width: 600px;
+    margin: auto;
+    animation: fadeInRight 2s ease;
+}
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/*our services*/
+.services{
+    width: 95%;
+    margin: 0px auto;
+    border: 1px;
+    display: flex;
+}
+.services h2{
+    text-align: center;
+    font-size: 40px;
+    color: #4f7413;
+    text-shadow: 2px 2px 5px rgba(139, 128, 128, 0.527);
+    animation: fadeInRight 3s ease;
+}
+.services h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+    color: #4f7413;
+    text-shadow: 2px 2px 5px rgba(139, 128, 128, 0.527);
+    animation: fadeInRight 2s ease;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-content: space-between;
+}
+.row .col{
+    flex: 1 1 21rem;
+    flex-wrap: wrap;
+    margin: 10px 20px;
+    align-self: normal;
+    padding: 10px 20px;
+    border: 3px solid rgb(230, 236, 230);
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.services{
+    padding: 20px;
+    flex: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.services img{
+    width: 70%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+.services img:hover{
+    transform: scale(1.2);
+
+}
+.services .row{
+    margin-top: 20px;
+}
+h4{
+    font-size: 30px;
+    color: #4b523b;
+    margin: 30px auto;
+    background: #e9ce5538;
+}
+.services p{
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    line-height: 1.2;
+    text-align: left;
+}
+/*our services page2*/
+.Service{
+    width: 100%;
+    margin: 0px auto;
+    border: 1px;
+    display: flex;
+    background-image: url(/our/d6.jpg);
+    background-position: 100%;
+    background-size: cover;
+}
+.Service h2{
+    text-align: center;
+    font-size: 40px;
+    color: #4f7413;
+    text-shadow: 2px 2px 5px rgba(139, 128, 128, 0.527);
+    animation: fadeInRight 3s ease;
+}
+.Service h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+    color: #4f7413;
+    text-shadow: 2px 2px 5px rgba(139, 128, 128, 0.527);
+    animation: fadeInRight 2s ease;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-content: space-between;
+}
+.row .col{
+    flex: 1 1 21rem;
+    flex-wrap: wrap;
+    margin: 10px 20px;
+    align-self: normal;
+    padding: 10px 20px;
+    border: 3px solid rgb(230, 236, 230);
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.Service{
+    padding: 20px;
+    flex: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.Service img{
+    width: 70%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+.Service img:hover{
+    transform: scale(1.2);
+
+}
+.Service .row{
+    margin-top: 20px;
+}
+h4{
+    font-size: 30px;
+    color: #4b523b;
+    margin: 30px auto;
+    background: #e9ce5538;
+}
+.Service p{
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    line-height: 1.2;
+    text-align: left;
+}
+/*Contact us*/
+.contact{
+    height: 60vh;
+    width: 100%;
+    margin: 0%;
+    background: url(/our/d6.jpg)no-repeat center center/cover;;
+    background-position: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.contacts{
+    height: 100vh;
+    width: 100%;
+    margin: 00%;
+    background-image: url(/our/d6.jpg);
+    background-position: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.contact-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 80px;
+}
+.contact-form{
+    text-align: left;
+}
+.container h1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+    color: #4f7413;
+    text-shadow: 2px 2px 5px rgba(139, 128, 128, 0.527);
+    animation: fadeInRight 2s ease;
+
+}
+.container h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+    color: #4f7413;
+    text-shadow: 2px 2px 5px rgba(139, 128, 128, 0.527);
+    animation: fadeInRight 3s ease;
+
+}
+.contact-form h3{
+    font-size: 24px;
+    margin-top: 30px;
+    color: #4f7413;
+}
+.form-group{
+    margin-bottom:15px;
+}
+input, textarea{
+    width: 500PX;
+    margin-top: 1%;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fafafa;
+    color: #333;
+}
+input:focus
+textarea:focus{
+    outline: none;
+    box-shadow: 0 0 8px #bbb;
+}
+button{
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor:pointer ;
+    transition: 0.3s ease;
+}
+button:hover{
+    background-color: #45a049;
+}
+.contact-info{
+    text-align: left;
+}
+.contact-info h3{
+    font-size: 24px;
+    margin-top: 30px;
+    color: #4f7413;
+}
+.contact-info p{
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 20px;
+    font-weight: 500;
+}
+.contact-info i{
+    color: #00bd2f;
+    margin-top: 20px;
+    font-size: 20px;
+}
+iframe{
+    width: 100%;
+    height: 25vh;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0 0 9px #ffffff;
+}
+/*our clients*/
+.clients{
+    width: 95%;
+    min-height: 50vh;
+    margin: 5px auto;
+    border: 1px;
+    display: flex;
+}
+.clients h2{
+    text-align: center;
+    font-size: 40px;
+    color: #4f7413;
+    text-shadow: 2px 2px 5px rgba(139, 128, 128, 0.527);
+    animation: fadeInRight 3s ease;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .client{
+    flex: auto;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    align-self: normal;
+    padding: 10px 20px;
+}
+.clients{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(223, 232, 240, 0.1);
+    flex: 50p;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.clients img{
+    width: 100%;
+    max-height: 100px;
+    margin-top: 70px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.clients img:hover{
+    transform: scale(1.2);
+}
+.clients .row{
+    margin-top: 10px;
+}
+/*Footer*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+}
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* mobile device */
+@media only screen and (max-width:830px){
+    .menu-btn {
+        display: block;
+        top: 21px;
+        left: 90%;
+    }
+    .navbar {
+        padding: 0px;
+        position: relative; /* Add position relative to the navbar */
+    }
+    .logo-container {
+        position: absolute;
+        top: 24px;
+        left: 20px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: #ffffff;;
+        margin-top: -830px;
+        transition: all 0.6s ease;
+    }
+    .mobile-menu {
+        margin-top: 0px;
+    }
+    .nav-links li {
+        text-align: center;
+        margin: 30px auto;
+    }
+    header{
+        height: 70vh;
+        padding: 0px;
+        
+    }
+/* Contacts */
+    .container{
+        padding: 00px;
+    }
+    .contact{
+        margin: 0px;
+        width: 100%;
+        height: 100vh;
+    }
+    .contact-wrapper{
+        grid-template-columns: 1fr;
+        align-items: center;
+        grid-gap: 30px;
+    }
+    input, textarea{
+        width: 100%;
+    }
+    .contacts{
+        margin: 0px;
+        width: 100%;
+        height:100%;
+    }
+/* Services */
+    .row{
+        flex-direction: column;
+    }
+    .row .col{
+        margin: 20px auto;
+    }
+    .col img{
+        max-width: 80%;
+    }
+/* Clients */
+    .clients img{
+        max-width: 100%;
+    }
+/* About */
+    .heading h1{
+        font-size: 45px;
+        margin-top: 100px;
+    }
+    .hero{
+        margin: 0px;
+    }
+    .cont{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 5px 35px;
+   
+    }
+    .hero-content{
+        width: 100%;
+        margin: 15px 0px;
+    }
+    .hero-content p{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .hero-content button{
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+    .hero-image{
+        width: 100%;
+    }
+}
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        transform:translateY(50px) ;
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0px) ;
+    }
+}
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform:translateX(-50px) ;
+    }
+    100%{
+        opacity: 1;
+        transform:translateX(0px) ;
+    }
+}
+@keyframes fadeInTop{
+    0%{
+        opacity: 0;
+        transform:translateZ(-20px) ;
+    }
+    100%{
+        opacity: 1;
+        transform:translateZ(0px) ;
+    }
+    
+}

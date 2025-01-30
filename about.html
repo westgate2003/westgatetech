@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEST GATE TECHNICAL SERVICES LLC</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="/our/Logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="/our/Logo.png" alt="Logo" class="logo-image">
+            <h1 class="logo-text">WEST GATE TECHNICAL SERVICES LLC</h1>
+        </div>
+        <ul class="nav-links">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Our Services</a></li>
+            <li class="cnt"><a href="contact.html">Contact</a></li>
+        </ul>
+        <img src="/our/men-btn.png" alt="Menu Button" class="menu-btn">
+    </nav>
+    <!-- Hero Section -->
+    <section class="heros">
+        <div class="heading">
+            <h1>About Us</h1>
+        </div>
+        <div class="cont">
+            <div class="hero-content">
+                <p>West Gate Technical Services LLC was established in the year 2003 in the emirate of Dubai. The company operates under Westgate group of companies. The group is equipped to handle the UAE markets construction related requirements. The group consists of <br> <a href="https://www.alramiglass.com" target="_blank">Al Rami Glass & Aluminium</a>, established in the year 2006 and specializes in interior glass decorations and has been operating for 17 years in the UAE market. <br><a href="http://westgateuae.com/" target="_blank">Westgate Building Materials</a>, a sanitary ware trading company established in the year 2000 based in Dubai, have reputed leading brands Sanitary Ware and Fittings, Bathroom Accessories, Shower and Bath Enclosures, Stainless Steel Kitchen Sinks, and Linear Floor Drains.</p>
+                <button class="cta-button"><a href="/profile/Profile.pdf"target="_blank">View Profile</a></button>
+            </div>
+            <div class="hero-image">
+                <img src="/about/img-2.png" alt="About Us Image">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <center>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2024 West Gate Technical Services LLC. All rights reserved.</p>
+        </center>
+    </footer>
+    
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu');
+        });
+    </script>
+</body>
+</html>
